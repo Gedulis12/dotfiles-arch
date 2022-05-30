@@ -1,0 +1,17 @@
+[Added Associations]
+text/plain=Alacritty.desktop;userapp-alacritty -e vim-4DBKJ1.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-IWA3I1.desktop;
+image/png=sxiv.desktop;
+image/jpeg=sxiv.desktop;
+audio/x-mpegurl=vlc.desktop;
+
+[Default Applications]
+text/plain=userapp-alacritty -e vim-4DBKJ1.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-IWA3I1.desktop
+image/png=sxiv.desktop
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
+image/jpeg=sxiv.desktop

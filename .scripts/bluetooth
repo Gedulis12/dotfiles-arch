@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+bluetoothctl power on
+bluetoothctl agent on
+device=$(bluetoothctl devices | rofi -dmenu | awk '{print $2}')
+bluetoothctl pair $device
+bluetoothctl connect $device

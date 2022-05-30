@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+for i in $(seq 422)
+do
+	curl -s "http://bash.org/?browse=$i" | grep -Eo "&lt;.*"\|"<b>#[0-9]*</b>" | grep -Ev "</a>.*</center>" | sed 's/<b>//g' | sed 's/<br \/>//g' | sed 's/<\/b>//g' | sed 's/<\/p>//g' | sed 's/&lt;//g' | sed 's/&gt;/:/g' | sed 's/&quot\;/\"/g'
+done

@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+
+query=&1
+if [ -z $1 ]; then
+	echo -n "";
+	query=$(echo "" | pactree -lur $(pacman -Qq | rofi -dmenu -p "Search for package"))
+fi
+
+echo $query | sed 's/\s\+/\n/g' | rofi -dmenu -p "List of dependencies: "

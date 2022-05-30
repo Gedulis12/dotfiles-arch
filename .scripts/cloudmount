@@ -1,0 +1,5 @@
+#! /usr/bin/bash
+
+rclone mount --daemon onedrive: /home/gedas/clouddrives/onedrive
+rclone mount --daemon dropbox: /home/gedas/clouddrives/dropbox
+rclone mount --daemon gdrive-gediminas_repecka: /home/gedas/clouddrives/google-gediminas.repecka

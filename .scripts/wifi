@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+
+query=&1
+if [ -z $1 ]; then
+	echo -n "";
+	query=$(netctl list | rofi -dmenu -p "Select WiFi:")
+fi
+
+alacritty -e sudo netctl start $query && alacritty -e sudo systemctl restart netctl

@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+curl -F"file=@$(find $HOME -type f | rofi -dmenu -i -p  "Select a file for sharing")" 0x0.st | xclip -selection c &&
+notify-send "The link for the file is in the clipboard"
