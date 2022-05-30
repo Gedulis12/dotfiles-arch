@@ -1,20 +1,20 @@
 #!/bin/bash
 
 
-rsync -a $HOME/.bashrc ./
-rsync -a $HOME/.config/alacritty ./.config
-rsync -a $HOME/.config/i3 ./.config
-rsync -a $HOME/.config/mimeapps.list ./.config
-rsync -a $HOME/.config/picom ./.config
-rsync -a $HOME/.config/polybar ./.config
-rsync -a $HOME/.config/rofi ./.config
-rsync -a $HOME/.config/qBittorrent/themes/ICEBERG.qbtheme ./.config
-rsync -a $HOME/.irssi ./
-rsync -a $HOME/.scripts ./
-rsync -a $HOME/.xinitrc ./
-rsync -a $HOME/.vimrc ./
-rsync -a $HOME/.vim ./
-rsync -a $HOME/.tmux.conf ./
+rsync -a --delete $HOME/.bashrc ./
+rsync -a --delete $HOME/.config/alacritty ./.config
+rsync -a --delete $HOME/.config/i3 ./.config
+rsync -a --delete $HOME/.config/mimeapps.list ./.config
+rsync -a --delete $HOME/.config/picom ./.config
+rsync -a --delete $HOME/.config/polybar ./.config
+rsync -a --delete $HOME/.config/rofi ./.config
+rsync -a --delete $HOME/.config/qBittorrent/themes/ICEBERG.qbtheme ./.config
+rsync -a --delete $HOME/.irssi ./
+rsync -a --delete $HOME/.scripts ./
+rsync -a --delete $HOME/.xinitrc ./
+rsync -a --delete $HOME/.vimrc ./
+rsync -a --delete $HOME/.vim ./
+rsync -a --delete $HOME/.tmux.conf ./
 
 git add .
 git commit -m "New backup `date +'%Y-%m-%d %H:%M:%S'`";
