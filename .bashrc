@@ -45,4 +45,4 @@ alias tb="nc termbin.com 9999"
 alias ls='ls --color=auto'
 
 # Backup dotfiles
-alias dotb='cd $HOME/.dotfiles/ && $HOME/.dotfiles/backup.sh'
+alias dotb='cd $HOME/.dotfiles/ && $HOME/.dotfiles/backup.sh && cd -'
