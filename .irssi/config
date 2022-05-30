@@ -2,9 +2,9 @@ servers = (
   {
     address = "irc.libera.chat";
     chatnet = "Libera";
-    port = "6667";
-    use_tls = "no";
-    tls_verify = "no";
+    port = "6697";
+    use_tls = "yes";
+    tls_verify = "yes";
     autoconnect = "yes";
   },
   {
@@ -18,18 +18,10 @@ servers = (
 );
 
 chatnets = {
-  Libera = { type = "IRC"; nick = 'gedulis120' };
-  Snoonet = { type = "IRC"; nick = 'gedulis120' };
+  Libera = { type = "IRC"; nick = "nstrs"; };
+  Snoonet = { type = "IRC"; nick = "nstrs"; };
 };
 
-#channels = (
-#  { name = "#f1"; chatnet = "Libera"; autojoin = "yes"; },
-#  { name = "#networking"; chatnet = "Libera"; autojoin = "yes"; },
-#  { name = "#linux"; chatnet = "Libera"; autojoin = "yes"; },
-#  { name = "#archlinux"; chatnet = "Libera"; autojoin = "yes"; },
-#  { name = "#gnulag"; chatnet = "Snoonet"; autojoin = "yes"; },
-#  { name = "#selfhosted"; chatnet = "libera"; autojoin = "yes"; }
-#);
 
 aliases = {
   ATAG = "WINDOW SERVER";
@@ -187,76 +179,24 @@ statusbar = {
 settings = {
   core = {
     real_name = "Unknown";
-    user_name = "gedulis120";
-    nick = "gedulis120";
+    user_name = "nstrs";
+    nick = "nstrs";
     timestamp_format = "%H:%M:%S";
   };
   "fe-text" = { actlist_sort = "refnum"; };
 };
 hilights = ( { text = "nick"; nick = "yes"; word = "yes"; } );
-windows = {
-  1 = { immortal = "yes"; name = "(status)"; level = "ALL"; };
-  2 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#linux";
-        tag = "Libera";
-      }
-    );
-  };
-  3 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#networking";
-        tag = "Libera";
-      }
-    );
-  };
-  4 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#archlinux";
-        tag = "Libera";
-      }
-    );
-  };
-  5 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#gnulag";
-        tag = "Snoonet";
-      }
-    );
-  };
-  6 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#f1";
-        tag = "Libera";
-      }
-    );
-  };
-  7 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#selfhosted";
-        tag = "Libera";
-      }
-    );
-  };
-};
+channels = (
+  { name = "#gnulag"; chatnet = "Snoonet"; autojoin = "yes"; },
+  { name = "#linuxmasterrace"; chatnet = "Snoonet"; autojoin = "yes"; },
+  { name = "#linux"; chatnet = "Libera"; autojoin = "yes"; },
+  { name = "#archlinux"; chatnet = "Libera"; autojoin = "yes"; },
+  { name = "#networking"; chatnet = "Libera"; autojoin = "yes"; },
+  { name = "#ansible"; chatnet = "Libera"; autojoin = "yes"; },
+  { name = "#docker"; chatnet = "Libera"; autojoin = "yes"; },
+  { name = "#reddit-sysadmin"; chatnet = "Libera"; autojoin = "yes"; }
+);
+windows = { 1 = { immortal = "yes"; name = "(status)"; level = "ALL"; }; };
 mainwindows = {
   1 = { 
     first_line = "1";
