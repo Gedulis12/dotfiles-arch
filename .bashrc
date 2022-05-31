@@ -12,8 +12,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 
-PS1="\[$(tput bold)\]\[\033[38;5;6m\]\h\[$(tput bold)\]\[\033[38;5;5m\]@\[$(tput bold)\]\[\033[38;5;6m\]\u\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;6m\]\W\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;5m\]\\$\[$(tput sgr0)\]"
-
+PS1="\[$(tput bold)\]\[\033[38;5;6m\]\u\[$(tput bold)\]\[\033[38;5;5m\]@\[$(tput bold)\]\[\033[38;5;6m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;6m\]\W\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;5m\]\\$\[$(tput sgr0)\]"
 # Import colorscheme from 'wal' asynchronously
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
