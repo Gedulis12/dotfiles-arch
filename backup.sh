@@ -9,13 +9,13 @@ rsync -a --delete $HOME/.config/picom ./.config
 rsync -a --delete $HOME/.config/polybar ./.config
 rsync -a --delete $HOME/.config/rofi ./.config
 rsync -a --delete $HOME/.config/qBittorrent/themes/ICEBERG.qbtheme ./.config
+rsync -a --delete $HOME/.config/sxhkd ./.config
 rsync -a --delete $HOME/.irssi ./
 rsync -a --delete $HOME/.scripts ./
 rsync -a --delete $HOME/.xinitrc ./
 rsync -a --delete $HOME/.vimrc ./
 rsync -a --delete $HOME/.vim ./
 rsync -a --delete $HOME/.suckless ./
-rsync -a --delete $HOME/.config/sxhkd ./
 
 git add .
 git commit -m "New backup `date +'%Y-%m-%d %H:%M:%S'`";
