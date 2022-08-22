@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+awk '{print $1 * 100 / 24000 "%"}' /sys/class/backlight/intel_backlight/brightness

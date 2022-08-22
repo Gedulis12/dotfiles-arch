@@ -14,7 +14,6 @@ rsync -a --delete $HOME/.scripts ./
 rsync -a --delete $HOME/.xinitrc ./
 rsync -a --delete $HOME/.vimrc ./
 rsync -a --delete $HOME/.vim ./
-rsync -a --delete $HOME/.tmux.conf ./
 
 git add .
 git commit -m "New backup `date +'%Y-%m-%d %H:%M:%S'`";
