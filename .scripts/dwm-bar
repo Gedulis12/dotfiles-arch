@@ -1,0 +1,32 @@
+#!/bin/sh
+
+
+hdd(){
+    hdd="$(df -h /home | grep dev | awk '{print $3 " " $5}')"
+    echo "$hdd"
+}
+
+vol(){
+    vol="$(amixer -D pulse get Master | awk -F '[][]' 'END{print $4":"$2}')"
+    echo "Volume $vol"
+}
+
+dte(){
+    dte="$(date +"%Y-%m-%d %R")"
+    echo "$dte"
+}
+
+bat(){
+    bat="$(cat /sys/class/power_supply/BAT0/capacity)"
+    echo "$bat"
+}
+
+bar(){
+    echo "HDD $(hdd) | BAT $(bat) | VOL $(vol) | DATE $(dte)"
+}
+
+while true; do
+    xsetroot -name "$(bar)"
+    sleep 30
+done
+

@@ -10,7 +10,7 @@ nnoremap <C-b> :Buffers<C-r>
 
 " interface
 set background=dark
-colorscheme gruvbox
+" #colorscheme gruvbox
 set enc=utf8
 set number relativenumber
 syntax on
