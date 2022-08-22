@@ -1,0 +1,40 @@
+# Volume Up
+XF86AudioRaiseVolume
+     pactl set-sink-volume @DEFAULT_SINK@ +10%
+
+# Volume Down
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -10%
+
+# Mute volume
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Mute mic
+XF86AudioMicMute 
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+# Screen Brightness controll
+XF86MonBrightnessUp
+    echo $(awk '{print $1 + 2400}' /sys/class/backlight/intel_backlight/brightness) > /sys/class/backlight/intel_backlight/brightness
+
+XF86MonBrightnessDown
+    echo $(awk '{print $1 - 2400}' /sys/class/backlight/intel_backlight/brightness) > /sys/class/backlight/intel_backlight/brightness
+
+# Monitors set up
+super + ctrl + m
+    monitors-desktop
+
+super + ctrl + n
+    monitors-laptop
+
+# Screenshots
+super + shift + d
+    maim --select ~/pictures/Screenshots/$(date +%s).png
+
+super + shift + s
+    maim --select | xclip -selection clipboard -t image/png
+
+# Killprocess
+super + ctrl + k
+    killprocess
