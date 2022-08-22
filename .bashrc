@@ -1,8 +1,11 @@
 #
 # ~/.bashrc
 #
+# set -o vi
 PATH="/home/gedas/.local/bin:$PATH"
 PATH="/home/gedas/.scripts:$PATH"
+PATH="/home/gedas/code/flutter/flutter/bin:$PATH"
+PATH="/home/gedas/downloads/androidstudio/android-studio/bin:$PATH"
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -33,6 +36,7 @@ export LESSCLOSE="lessclose %s %s"
 # Some useful aliases
 alias la='ls -lah'
 alias ll='ls -l'
+alias i3config='vim ~/.config/i3/config'
 
 # Source .bashrc file
 alias bashs='source ~/.bashrc'
