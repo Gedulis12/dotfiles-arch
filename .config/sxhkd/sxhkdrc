@@ -38,3 +38,7 @@ super + shift + s
 # Killprocess
 super + ctrl + k
     killprocess
+
+# Power menu
+super + p
+    dmenu-power
