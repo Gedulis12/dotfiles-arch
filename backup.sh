@@ -8,6 +8,7 @@ rsync -a --delete $HOME/.config/mimeapps.list ./.config
 rsync -a --delete $HOME/.config/picom ./.config
 rsync -a --delete $HOME/.config/polybar ./.config
 rsync -a --delete $HOME/.config/rofi ./.config
+rsync -a --delete $HOME/.config/tmux ./.config
 rsync -a --delete $HOME/.config/qBittorrent/themes/ICEBERG.qbtheme ./.config
 rsync -a --delete $HOME/.config/sxhkd ./.config
 rsync -a --delete $HOME/.irssi ./

@@ -1,18 +1,18 @@
 # Volume Up
 XF86AudioRaiseVolume
-     pactl set-sink-volume @DEFAULT_SINK@ +10%
+     pactl set-sink-volume @DEFAULT_SINK@ +10%; refbar
 
 # Volume Down
 XF86AudioLowerVolume
-    pactl set-sink-volume @DEFAULT_SINK@ -10%
+    pactl set-sink-volume @DEFAULT_SINK@ -10%; refbar
 
 # Mute volume
 XF86AudioMute
-    pactl set-sink-mute @DEFAULT_SINK@ toggle
+    pactl set-sink-mute @DEFAULT_SINK@ toggle; refbar
 
 # Mute mic
 XF86AudioMicMute 
-    pactl set-source-mute @DEFAULT_SOURCE@ toggle
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle; refbar
 
 # Screen Brightness controll
 XF86MonBrightnessUp
