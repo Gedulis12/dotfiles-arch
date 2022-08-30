@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/gedas/foodapp/macos'
 let g:netrw_dirhist_6='/home/gedas/code/flutter/techwithtimtutorial/lib'
 let g:netrw_dirhist_5='/home/gedas/.vim/colors'
 let g:netrw_dirhist_4='/home/gedas/.vim'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_1='/home/gedas/.suckless/dwm'
 let g:netrw_dirhist_0='/home/gedas/.scripts'
 let g:netrw_dirhist_9='/home/gedas/.i3'
 let g:netrw_dirhist_8='/home/gedas'
-let g:netrw_dirhist_7='/home/gedas/.i3'
